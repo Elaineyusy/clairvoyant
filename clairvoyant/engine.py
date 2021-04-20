@@ -194,10 +194,10 @@ class Engine:
 
 
 class Backtest(Engine):
-    def __init__(self, features, trainStr, trainEnd, testStr, testEnd, buyThreshold=0.65, sellThreshold=0.65,
-                 continueTraining=False):
-        Engine.__init__(self, features, trainStr, trainEnd, testStr, testEnd, buyThreshold, sellThreshold,
-                        continueTraining)
+    def __init__(self, features, train_str, train_end, test_str, test_end, buy_threshold=0.65, sell_threshold=0.65,
+                 continue_training=False):
+        Engine.__init__(self, features, train_str, train_end, test_str, test_end, buy_threshold, sell_threshold,
+                        continue_training)
 
         # Statistics
         self.totalBuys = 0
